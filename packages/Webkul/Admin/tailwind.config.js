@@ -25,25 +25,34 @@ module.exports = {
 
         extend: {
             colors: {
-                darkGreen: '#40994A',
-                darkBlue: '#0044F2',
-                darkPink: '#F85156',
+                /* A.B DENTAIRE Brand Colors */
+                brandNavy: "#0c1a2e" /* Primary dark navy */,
+                brandBlue: "#2563eb" /* Accent blue - buttons, links */,
+                brandBlueHover: "#1d4ed8" /* Darker blue for hover states */,
+                brandBlueLighter: "#3b82f6" /* Lighter blue for accents */,
+                brandWhite: "#ffffff" /* White text/elements */,
+                brandGray: "#94a3b8" /* Muted text */,
+                brandGrayLight: "#f1f5f9" /* Light backgrounds */,
+                /* Legacy colors */
+                darkGreen: "#40994A",
+                darkBlue: "#2563eb" /* Updated to brand blue */,
+                darkPink: "#F85156",
             },
 
             fontFamily: {
-                inter: ['Inter'],
-                icon: ['icomoon']
-            }
+                inter: ["Inter"],
+                icon: ["icomoon"],
+            },
         },
     },
-    
-    darkMode: 'class',
+
+    darkMode: "class",
 
     plugins: [],
 
     safelist: [
         {
             pattern: /icon-/,
-        }
-    ]
+        },
+    ],
 };

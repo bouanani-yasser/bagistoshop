@@ -29,18 +29,27 @@ module.exports = {
 
         extend: {
             colors: {
-                navyBlue: "#060C3B",
+                /* A.B DENTAIRE Brand Colors */
+                navyBlue: "#0c1a2e" /* Primary dark navy - background */,
+                brandNavy: "#0c1a2e" /* Primary dark navy */,
+                brandBlue: "#2563eb" /* Accent blue - buttons, links */,
+                brandBlueHover: "#1d4ed8" /* Darker blue for hover states */,
+                brandBlueLighter: "#3b82f6" /* Lighter blue for accents */,
+                brandWhite: "#ffffff" /* White text/elements */,
+                brandGray: "#94a3b8" /* Muted text */,
+                brandGrayLight: "#f1f5f9" /* Light backgrounds */,
+                /* Legacy colors (can be removed if not used) */
                 lightOrange: "#F6F2EB",
-                darkGreen: '#40994A',
-                darkBlue: '#0044F2',
-                darkPink: '#F85156',
+                darkGreen: "#40994A",
+                darkBlue: "#2563eb" /* Updated to brand blue */,
+                darkPink: "#F85156",
             },
 
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
                 dmserif: ["DM Serif Display", "serif"],
             },
-        }
+        },
     },
 
     plugins: [],
@@ -48,6 +57,6 @@ module.exports = {
     safelist: [
         {
             pattern: /icon-/,
-        }
-    ]
+        },
+    ],
 };

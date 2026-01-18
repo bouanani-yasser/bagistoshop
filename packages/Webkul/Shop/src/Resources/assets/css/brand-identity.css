@@ -1,0 +1,301 @@
+/* ==========================================================================
+   A.B DENTAIRE - Brand Identity Stylesheet
+   
+   Extracted from brand logo:
+   - Company: A.B DENTAIRE
+   - Industry: Dental Equipment & Products (Vente Équipements & Produits Dentaire)
+   - Style: Modern, Professional, Medical/Healthcare
+   ========================================================================== */
+
+/* ==========================================================================
+   COLOR PALETTE
+   ========================================================================== */
+
+/*
+   PRIMARY COLORS
+   ─────────────────────────────────────────────────────────────────────────
+   
+   Navy Blue (Primary/Background)
+   HEX: #0c1a2e
+   RGB: 12, 26, 46
+   HSL: 215°, 59%, 11%
+   Use: Headers, footers, dark sections, navigation backgrounds
+   
+   Accent Blue (Interactive/CTA)
+   HEX: #2563eb
+   RGB: 37, 99, 235
+   HSL: 221°, 83%, 53%
+   Use: Buttons, links, active states, highlights, icons
+   
+   White (Text/Elements)
+   HEX: #ffffff
+   RGB: 255, 255, 255
+   HSL: 0°, 0%, 100%
+   Use: Text on dark backgrounds, cards, primary backgrounds
+   
+   ─────────────────────────────────────────────────────────────────────────
+   
+   SECONDARY/UTILITY COLORS
+   
+   Blue Hover State
+   HEX: #1d4ed8
+   Use: Hover states for blue buttons/links
+   
+   Blue Lighter
+   HEX: #3b82f6
+   Use: Secondary accents, info badges, lighter highlights
+   
+   Gray (Muted)
+   HEX: #94a3b8
+   Use: Secondary text, placeholders, borders
+   
+   Gray Light
+   HEX: #f1f5f9
+   Use: Light backgrounds, alternating rows, subtle sections
+*/
+
+/* ==========================================================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   ========================================================================== */
+
+:root {
+    /* Primary Brand Colors */
+    --ab-navy: #0c1a2e;
+    --ab-blue: #2563eb;
+    --ab-white: #ffffff;
+
+    /* Extended Palette */
+    --ab-blue-hover: #1d4ed8;
+    --ab-blue-light: #3b82f6;
+    --ab-blue-lighter: #dbeafe;
+    --ab-gray: #94a3b8;
+    --ab-gray-light: #f1f5f9;
+    --ab-gray-dark: #475569;
+
+    /* Semantic Colors */
+    --ab-primary: var(--ab-blue);
+    --ab-primary-hover: var(--ab-blue-hover);
+    --ab-secondary: var(--ab-navy);
+    --ab-background: var(--ab-white);
+    --ab-background-alt: var(--ab-gray-light);
+    --ab-text: var(--ab-navy);
+    --ab-text-muted: var(--ab-gray);
+
+    /* Component Specific */
+    --ab-header-bg: var(--ab-navy);
+    --ab-header-text: var(--ab-white);
+    --ab-footer-bg: var(--ab-navy);
+    --ab-footer-text: var(--ab-white);
+    --ab-button-primary-bg: var(--ab-blue);
+    --ab-button-primary-hover: var(--ab-blue-hover);
+    --ab-button-primary-text: var(--ab-white);
+    --ab-link-color: var(--ab-blue);
+    --ab-link-hover: var(--ab-blue-hover);
+    --ab-border-color: #e2e8f0;
+
+    /* Shadows */
+    --ab-shadow-sm: 0 1px 2px 0 rgba(12, 26, 46, 0.05);
+    --ab-shadow:
+        0 1px 3px 0 rgba(12, 26, 46, 0.1), 0 1px 2px -1px rgba(12, 26, 46, 0.1);
+    --ab-shadow-md:
+        0 4px 6px -1px rgba(12, 26, 46, 0.1),
+        0 2px 4px -2px rgba(12, 26, 46, 0.1);
+    --ab-shadow-lg:
+        0 10px 15px -3px rgba(12, 26, 46, 0.1),
+        0 4px 6px -4px rgba(12, 26, 46, 0.1);
+}
+
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+/* Background Colors */
+.bg-ab-navy {
+    background-color: var(--ab-navy);
+}
+.bg-ab-blue {
+    background-color: var(--ab-blue);
+}
+.bg-ab-white {
+    background-color: var(--ab-white);
+}
+.bg-ab-gray-light {
+    background-color: var(--ab-gray-light);
+}
+
+/* Text Colors */
+.text-ab-navy {
+    color: var(--ab-navy);
+}
+.text-ab-blue {
+    color: var(--ab-blue);
+}
+.text-ab-white {
+    color: var(--ab-white);
+}
+.text-ab-gray {
+    color: var(--ab-gray);
+}
+
+/* Border Colors */
+.border-ab-navy {
+    border-color: var(--ab-navy);
+}
+.border-ab-blue {
+    border-color: var(--ab-blue);
+}
+
+/* ==========================================================================
+   COMPONENT STYLES
+   ========================================================================== */
+
+/* Primary Button - Brand Styled */
+.btn-ab-primary {
+    background-color: var(--ab-blue);
+    color: var(--ab-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-ab-primary:hover {
+    background-color: var(--ab-blue-hover);
+}
+
+.btn-ab-primary:active {
+    transform: scale(0.98);
+}
+
+/* Secondary Button - Outlined */
+.btn-ab-secondary {
+    background-color: transparent;
+    color: var(--ab-blue);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 2px solid var(--ab-blue);
+    cursor: pointer;
+}
+
+.btn-ab-secondary:hover {
+    background-color: var(--ab-blue);
+    color: var(--ab-white);
+}
+
+/* Dark Button - Navy */
+.btn-ab-dark {
+    background-color: var(--ab-navy);
+    color: var(--ab-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-ab-dark:hover {
+    opacity: 0.9;
+}
+
+/* Links */
+.link-ab {
+    color: var(--ab-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link-ab:hover {
+    color: var(--ab-blue-hover);
+    text-decoration: underline;
+}
+
+/* Cards */
+.card-ab {
+    background-color: var(--ab-white);
+    border-radius: 0.5rem;
+    box-shadow: var(--ab-shadow);
+    padding: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.card-ab:hover {
+    box-shadow: var(--ab-shadow-md);
+}
+
+/* Header Style */
+.header-ab {
+    background-color: var(--ab-header-bg);
+    color: var(--ab-header-text);
+}
+
+/* Footer Style */
+.footer-ab {
+    background-color: var(--ab-footer-bg);
+    color: var(--ab-footer-text);
+}
+
+/* Badge/Tag */
+.badge-ab {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    background-color: var(--ab-blue-lighter);
+    color: var(--ab-blue-hover);
+}
+
+/* ==========================================================================
+   GRADIENT STYLES
+   ========================================================================== */
+
+.gradient-ab-navy-blue {
+    background: linear-gradient(
+        135deg,
+        var(--ab-navy) 0%,
+        var(--ab-blue-hover) 100%
+    );
+}
+
+.gradient-ab-blue {
+    background: linear-gradient(
+        135deg,
+        var(--ab-blue-light) 0%,
+        var(--ab-blue) 100%
+    );
+}
+
+/* ==========================================================================
+   DENTAL/MEDICAL INDUSTRY SPECIFIC STYLES
+   ========================================================================== */
+
+/* Professional, clean appearance suited for medical/dental industry */
+.section-professional {
+    background-color: var(--ab-white);
+    border-bottom: 1px solid var(--ab-border-color);
+}
+
+/* Trust indicators with brand colors */
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--ab-gray-light);
+    border-radius: 0.375rem;
+    color: var(--ab-navy);
+    font-weight: 500;
+}
+
+.trust-badge svg,
+.trust-badge i {
+    color: var(--ab-blue);
+}
