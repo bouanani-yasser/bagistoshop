@@ -35,6 +35,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Fix public disk to use public/storage directly (Windows symlink workaround)
+        $this->app['config']->set('filesystems.disks.public.root', public_path('storage'));
+
         ParallelTesting::setUpTestDatabase(function (string $database, int $token) {
             Artisan::call('db:seed');
         });
