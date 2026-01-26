@@ -5,7 +5,7 @@
     <x-shop::layouts.header.desktop.top />
 </div>
 
-<header class="shadow-gray sticky top-0 z-10 bg-white shadow-sm max-lg:shadow-none">
+<header class="shadow-gray sticky top-0 z-50 bg-white shadow-sm max-lg:shadow-none" style="z-index: 10000;">
     <v-header-switcher>
         <!-- Desktop Header Shimmer -->
         <div class="flex flex-wrap max-lg:hidden">
@@ -14,7 +14,7 @@
                 <div class="flex items-center gap-x-10 max-[1180px]:gap-x-5">
                     <!-- Logo Shimmer -->
                     <span
-                        class="shimmer block h-[29px] w-[131px] rounded"
+                        class="shimmer block h-[11px] w-[50px] rounded"
                         role="presentation"
                     >
                     </span>
@@ -93,7 +93,7 @@
                     
                     <!-- Logo Shimmer -->
                     <span 
-                        class="shimmer block h-[29px] w-[131px] rounded" 
+                        class="shimmer block h-[11px] w-[50px] rounded" 
                         role="presentation"
                     >
                     </span>

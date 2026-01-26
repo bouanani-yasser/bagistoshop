@@ -21,7 +21,7 @@
     ]);
 @endphp
 
-<footer class="mt-9 bg-brandNavy text-white max-sm:mt-10">
+<footer class="bg-brandNavy text-white">
     <div class="flex justify-between gap-x-6 gap-y-8 p-[60px] max-1060:flex-col-reverse max-md:gap-5 max-md:p-8 max-sm:px-4 max-sm:py-5">
         <!-- For Desktop View -->
         <div class="flex flex-wrap items-start gap-24 max-1180:gap-6 max-1060:hidden">

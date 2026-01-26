@@ -72,7 +72,8 @@
                 leave-to-class="opacity-0"
             >
                 <div
-                    class="fixed inset-0 z-20 bg-gray-500 bg-opacity-50 transition-opacity"
+                    class="fixed inset-0 bg-gray-500 bg-opacity-50 transition-opacity"
+                    style="z-index: 9998;"
                     v-show="isOpen"
                 ></div>
             </transition>
@@ -89,7 +90,8 @@
                 :leave-to-class="enterFromLeaveToClasses"
             >
                 <div
-                    class="fixed z-[1000] overflow-hidden bg-white max-md:!w-full"
+                    class="fixed overflow-hidden bg-white max-md:!w-full"
+                    style="z-index: 10000;"
                     :class="{
                         'inset-x-0 top-0': position == 'top',
                         'inset-x-0 bottom-0 max-sm:max-h-full': position == 'bottom',

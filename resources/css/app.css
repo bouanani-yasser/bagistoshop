@@ -1,0 +1,29 @@
+/* Apply rounded corners to all images */
+img {
+    border-radius: 10px;
+}
+
+/* Logo images */
+.logo img,
+.header img,
+[class*="logo"] img {
+    border-radius: 10px;
+}
+
+/* Product images */
+.product img,
+.product-image img,
+[class*="product"] img {
+    border-radius: 10px;
+}
+
+/* Language/Font select styling */
+select {
+    color: black;
+    background-color: white;
+}
+
+select option {
+    color: black;
+    background-color: white;
+}

@@ -42,7 +42,7 @@
             <div class="absolute bottom-20 right-10 w-96 h-96 bg-brandBlueLighter rounded-full blur-3xl"></div>
         </div>
         
-        <div class="container mx-auto px-4 py-20 md:py-28 relative z-10">
+        <div class="container mx-auto px-4 py-20 md:py-28 relative">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-8">
                     <span class="inline-flex items-center gap-2 px-4 py-2 bg-brandBlue/20 border border-brandBlue/50 rounded-full text-sm font-medium text-brandBlueLighter">
@@ -282,7 +282,7 @@
                 <!-- Promo Banner 1 -->
                 <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brandNavy to-brandBlue p-8 md:p-12 text-white group">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="relative z-10">
+                    <div class="relative">
                         <span class="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-medium mb-4">@lang('shop::app.home.dental.new-arrivals')</span>
                         <h3 class="text-2xl md:text-3xl font-bold mb-4">@lang('shop::app.home.dental.promo-equipment-title')</h3>
                         <p class="text-gray-300 mb-6 max-w-md">@lang('shop::app.home.dental.promo-equipment-desc')</p>
@@ -296,7 +296,7 @@
                 <!-- Promo Banner 2 -->
                 <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-green-600 to-emerald-500 p-8 md:p-12 text-white group">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="relative z-10">
+                    <div class="relative">
                         <span class="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-medium mb-4">@lang('shop::app.home.dental.special-offer')</span>
                         <h3 class="text-2xl md:text-3xl font-bold mb-4">@lang('shop::app.home.dental.promo-consumables-title')</h3>
                         <p class="text-gray-200 mb-6 max-w-md">@lang('shop::app.home.dental.promo-consumables-desc')</p>
@@ -347,7 +347,7 @@
             <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-brandBlueLighter rounded-full blur-3xl"></div>
         </div>
         
-        <div class="container mx-auto px-4 relative z-10">
+        <div class="container mx-auto px-4 relative">
             <div class="text-center mb-16">
                 <span class="inline-block px-4 py-2 bg-white/10 rounded-full text-sm font-semibold text-brandBlueLighter mb-4">
                     @lang('shop::app.home.dental.why-us')
@@ -479,7 +479,7 @@
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 border border-white/50 rounded-full"></div>
         </div>
         
-        <div class="container mx-auto px-4 text-center relative z-10">
+        <div class="container mx-auto px-4 text-center relative">
             <h2 class="text-3xl md:text-5xl font-bold mb-6">@lang('shop::app.home.dental.cta-title')</h2>
             <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">@lang('shop::app.home.dental.cta-description')</p>
             <div class="flex flex-wrap justify-center gap-4">
